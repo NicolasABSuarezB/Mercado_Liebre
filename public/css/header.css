@@ -1,0 +1,45 @@
+header {
+    background-color: var(--amarillo);
+    padding: 20px 0;
+    font-size: var(--cuerpo-de-texto);
+}
+
+header .logo,header .searchBar {
+    margin: 0 10px;
+}
+
+header .logo img {
+    width: 45%;
+}
+
+header .searchBar i {
+    padding: 1px;
+    background-color: white;
+    border: 1px solid var(--grisClaro);
+    border-radius: 4px;
+}
+
+header p {
+    margin: 20px;
+    text-align: center;
+}
+
+header .links ul {
+    margin: 0 0 20px;
+}
+
+header .links ul i{
+    margin: 0 3px;
+}
+
+header .burger {
+    text-align: center;
+}
+
+header .burger i {
+    background-color: var(--celeste);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: var(--titulares);
+}
