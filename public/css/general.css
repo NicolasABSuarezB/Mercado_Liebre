@@ -1,15 +1,19 @@
-*{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: var(--fuentePrincipal);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuentePrincipal);
 }
 
-a{
+body {
+    background-color: var(--grisClaro);
+}
+
+a {
     color: black;
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }

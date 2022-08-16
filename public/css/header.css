@@ -4,7 +4,8 @@ header {
     font-size: var(--cuerpo-de-texto);
 }
 
-header .logo,header .searchBar {
+header .logo,
+header .searchBar {
     margin: 0 10px;
 }
 
@@ -23,12 +24,14 @@ header p {
     margin: 20px;
     text-align: center;
 }
-
+header .links{
+    display: none;
+}
 header .links ul {
     margin: 0 0 20px;
 }
 
-header .links ul i{
+header .links ul i {
     margin: 0 3px;
 }
 
@@ -42,4 +45,19 @@ header .burger i {
     padding: 10px;
     border-radius: 6px;
     font-size: var(--titulares);
+}
+
+/*Tablet*/ 
+@media (min-width:461px){
+    header .links {
+        display: block;
+    }
+    header .burger {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width:769px){
+
 }
