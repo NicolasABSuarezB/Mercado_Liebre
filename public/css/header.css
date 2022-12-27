@@ -1,63 +1,195 @@
 header {
     background-color: var(--amarillo);
-    padding: 20px 0;
-    font-size: var(--cuerpo-de-texto);
+    font-size: var(--paragraph);
+    padding-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-header .logo,
-header .searchBar {
-    margin: 0 10px;
+header .container-logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
-header .logo img {
-    width: 45%;
+header .container-logo .logo {
+    width: 30%;
+    padding-top: 25px;
+    margin-top: -20px;
 }
 
-header .searchBar i {
-    padding: 1px;
-    background-color: white;
-    border: 1px solid var(--grisClaro);
-    border-radius: 4px;
+header .container-logo .logo__img {
+    margin-top: 20px;
 }
 
-header p {
-    margin: 20px;
-    text-align: center;
-}
-header .links{
-    display: none;
-}
-header .links ul {
-    margin: 0 0 20px;
+header .container-logo .form {
+    margin-top: 20px;
 }
 
-header .links ul i {
-    margin: 0 3px;
+header .container-logo #search-bar {
+    display: flex;
+    margin-left: 5px;
 }
 
-header .burger {
-    text-align: center;
-}
-
-header .burger i {
-    background-color: var(--celeste);
-    color: white;
+header .container-logo .form input {
     padding: 10px;
-    border-radius: 6px;
-    font-size: var(--titulares);
+    border: none;
+    border-radius: 7px;
+    outline: none;
 }
 
-/*Tablet*/ 
-@media (min-width:461px){
-    header .links {
-        display: block;
+header .container-logo .form button {
+    margin-left: -20px;
+    color: gray;
+    background: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+header .quota {
+    text-align: center;
+    margin: 40px 0 20px
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul#top-list {
+    margin-bottom: 25px;
+}
+
+header .burger-menu {
+    display: none;
+    background-color: var(--celeste);
+    color: #fff;
+    width: 25px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+/* Mobile  */
+
+@media (min-width:320px) and (max-width:761px) {
+
+    header .burger-menu {
+        display: flex;
     }
-    header .burger {
-        display: none;
+
+    header .logo {
+        width: 50%;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
     }
+
+    header .container-logo .form input {
+        width: 150px;
+    }
+
+    header i {
+        align-self: center;
+    }
+
 }
 
 /* Desktop */
-@media (min-width:769px){
+
+@media (min-width: 762px) {
+
+    .container-desktop {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-logo {
+        width: 65%;
+        margin-right: 25px;
+    }
+
+    .quota {
+        width: 35%;
+    }
+
+    .nav-mercadoliebre {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        align-items: flex-end;
+    }
+
+    .nav-mercadoliebre ul {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+    }
+
+    header nav ul#top-list {
+        margin-bottom: 0;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 762px) and (max-width: 1000px) {
+
+    .container-desktop {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-logo {
+        width: 65%;
+        margin-right: 25px;
+    }
+
+    .quota {
+        width: 35%;
+    }
+
+    .nav-mercadoliebre {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        align-items: flex-end;
+    }
+
+    .nav-mercadoliebre ul {
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    header nav ul#top-list {
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (min-width: 1280px) {
+
+    /* Input */
+    header .container-logo .form input {
+        width: 250px;
+    }
 
 }

@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-:root{
+:root {
     /* Colores */
     --amarillo: #eac926;
-    --azul: #03264c;
+    --azul: #03264C;
     --celeste: #1259c3;
-    --grisOscuro: #666;
-    --grisClaro: #ebebeb;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
     --verde: #39b54a;
-    /* Fuente */
-    --fuentePrincipal: 'Roboto', sans-serif;
-    /* Tamaños Tipograficos */
-    --cuerpo-de-texto: 12px;
-    --titulares: 24px;
-    --precios: 18px;
-    --descuentosYdescripciones: 16px;
+    /* Fuentes */
+    --font-roboto: "Roboto", sans-serif;
+    --paragraph: 12px;
+    --title: 24px;
+    --prices: 18px;
+    --descounts-descriptions: 16px;
 }

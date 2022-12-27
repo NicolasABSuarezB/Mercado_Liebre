@@ -1,27 +1,45 @@
 footer {
-    padding: 20px 15px 10px;
+    padding-top: 40px;
     background-color: white;
 }
 
-footer section {
-    text-align: center;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-footer section:last-child {
-    text-align: start;
+footer article {
     margin-bottom: 40px;
-    padding: 0 30px;
 }
 
-footer section i {
+footer article.footer-article {
+    text-align: center;
+}
+
+footer article.footer-article i {
     color: var(--celeste);
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-footer section h3,
-footer section p {
-    color: var(--grisOscuro);
+footer article.footer-article i:hover {
+    color: #4d79bb;
+}
+
+footer article.footer-article h5 {
+    font-size: 16px;
+}
+
+footer article.footer-article p {
+    font-size: 12px;
+    width: 77%;
+    margin: 0 auto;
+    color: var(--gris-oscuro);
+}
+
+footer .copy {
+    color: var(--gris-oscuro);
+    font-size: var(--paragraph);
+    margin: 0 0 10px 15px;
+}
+
+@media (min-width:769px) {
+    .div-article-footer {
+        display: flex;
+    }
 }
