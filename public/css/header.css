@@ -41,7 +41,8 @@ header .container-logo .form input {
     border: none;
     border-radius: 7px;
     outline: none;
-}
+/*     width: 440px;
+ */}
 
 header .container-logo .form button {
     margin-left: -20px;
@@ -80,7 +81,7 @@ header .burger-menu {
 
 /* Mobile  */
 
-@media (min-width:320px) and (max-width:761px) {
+@media (max-width: 767px) {
 
     header .burger-menu {
         display: flex;
@@ -105,7 +106,7 @@ header .burger-menu {
 
 /* Desktop */
 
-@media (min-width: 762px) {
+@media (min-width: 1024px) {
 
     .container-desktop {
         display: flex;
@@ -119,7 +120,9 @@ header .burger-menu {
         width: 65%;
         margin-right: 25px;
     }
-
+    header .container-logo .form input {
+       width: 440px;
+    }
     .quota {
         width: 35%;
     }
@@ -145,7 +148,7 @@ header .burger-menu {
 
 /* Tablet */
 
-@media (min-width: 762px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
     .container-desktop {
         display: flex;
@@ -160,6 +163,9 @@ header .burger-menu {
         margin-right: 25px;
     }
 
+    header .container-logo .form input {
+        width: 300px;
+    }
     .quota {
         width: 35%;
     }
@@ -180,16 +186,6 @@ header .burger-menu {
 
     header nav ul#top-list {
         margin-bottom: 0;
-    }
-
-}
-
-
-@media (min-width: 1280px) {
-
-    /* Input */
-    header .container-logo .form input {
-        width: 250px;
     }
 
 }
